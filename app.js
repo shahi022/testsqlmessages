@@ -24,7 +24,7 @@ function submitMessage() {
       document.getElementById("status").innerHTML = "Message submitted!";
     }
   };
-  xhr.open("POST", "http://sql211.byetcluster.com/submit.php", true); // Update URL
+  xhr.open("POST", "https://sql211.byetcluster.com/submit.php", true); // Update URL
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.send("message=" + message);
 }
