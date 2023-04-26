@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  <title>My Message App</title>
+  </head>
+  <body>
+    <h1>My Message App</h1>
+    <label for="message">Enter your message:</label>
+    <input type="text" id="message" name="message"><br><br>
+    <button onclick="saveMessage()">Save Message</button>
+    <button onclick="showOldMessages()">Old Messages</button>
+    <button onclick="submitMessage()">Submit Message</button>
+    <button onclick="location.href='display_messages.php';">All Submitted Messages</button>
+    <p id="status"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
