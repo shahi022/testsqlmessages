@@ -1,9 +1,9 @@
 <?php
 // Connect to MySQL database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "submitted_messages";
+$servername = "sql211.byetcluster.com";
+$username = "epiz_34083507";
+$password = "3cqwmxz0";
+$dbname = "epiz_34083507_messages";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
@@ -24,4 +24,3 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
-<?php
