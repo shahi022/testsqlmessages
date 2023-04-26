@@ -27,7 +27,7 @@
 
 		<?php
 			// Connect to the database
-			$mysqli = new mysqli("localhost", "root", "", "submitted_messages");
+			$mysqli = new mysqli("sql211.epizy.com", "epiz_34083507", "3cqwmxz0", "epiz_34083507_messages");
 
 			// Check connection
 			if ($mysqli->connect_errno) {
