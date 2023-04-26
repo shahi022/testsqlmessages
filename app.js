@@ -16,16 +16,17 @@ function saveMessage() {
   }
   
   // Submit message to MySQL database
-  function submitMessage() {
-    var message = document.getElementById("message").value;
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById("status").innerHTML = "Message submitted!";
-      }
-    };
-    xhr.open("POST", "submit.php", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send("message=" + message);
-  }
+function submitMessage() {
+  var message = document.getElementById("message").value;
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      document.getElementById("status").innerHTML = "Message submitted!";
+    }
+  };
+  xhr.open("POST", "http://sql211.byetcluster.com/submit.php", true); // Update URL
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.send("message=" + message);
+}
+
   
